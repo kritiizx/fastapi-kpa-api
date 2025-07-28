@@ -8,15 +8,18 @@ Clone the repository:  git clone https://github.com/kritiizx/fastapi-kpa-api
 
 cd fastapi-kpa-api
 
-Navigate into the project directory:cd kpa_backend
+Navigate into the project directory :cd kpa_backend
 
-Create and activate a Python virtual environment:python -m venv venv
+Create and activate a Python virtual environment :python -m venv venv
 
-Install dependencies:pip install -r requirements.txt
+Install dependencies :pip install -r requirements.txt
 
 (Note: This project was developed with Python 3.12.4. Specific versions of passlib==1.7.4 and bcrypt==3.2.0 were explicitly installed to resolve compatibility issues.)
 
-Install PostgreSQL:Download and install PostgreSQL from https://www.postgresql.org/download/. Remember the postgres superuser password you set during installation.Create a PostgreSQL database:Using pgAdmin (the graphical tool that comes with PostgreSQL) or psql (command-line client), create a new database named kpa_db.Configure Environment Variables (.env file):Create a file named .env in the root directory of your Git repository . 
+Install PostgreSQL :  Download and install PostgreSQL from https://www.postgresql.org/download/.
+Remember the postgres superuser password you set during installation.
+Create a PostgreSQL database:Using pgAdmin (the graphical tool that comes with PostgreSQL) or psql (command-line client), create a new database named kpa_db.
+Configure Environment Variables (.env file): Create a file named .env in the root directory of your Git repository . 
 
 This file is used to store sensitive configuration.
 Add the following variables to your .env file, replacing the bracketed values with your actual credentials and secret key:
@@ -30,7 +33,7 @@ ACCESS_TOKEN_EXPIRE_MINUTES=30
 Run the FastAPI application:Ensure your PowerShell is in the root directory of your Git repository .Ensure your virtual environment is active.
 
 Run the server
-:uvicorn kpa_backend.main:app --reload
+:uvicorn kpa_backend.main: app --reload
 
 The API will be available at http://127.0.0.1:8000. You can access the interactive API documentation (Swagger UI) at http://127.0.0.1:8000/docs.Technologies
 and Tech Stack UsedBackend Framework: Python FastAPI (Version 0.116.1)Database: PostgreSQLORM (Object Relational Mapper): SQLAlchemy (Version 2.0.41)Password Hashing: Passlib (Version 1.7.4) with bcrypt (Version 3.2.0)Authentication: JWT (JSON Web Tokens) using python-joseEnvironment Variables Management: python-dotenvASGI Server: Uvicorn (Version 0.35.0)Implemented APIsThis project implements two APIs as per the assignment requirements:POST /api/v1/auth/loginDescription: Authenticates a user with a phone number and password. 
