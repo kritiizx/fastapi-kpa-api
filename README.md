@@ -5,11 +5,15 @@ This project implements two backend APIs for the KPA assignment using FastAPI an
 Setup InstructionsTo get this project up and running on your local machine, follow these steps:
 
 Clone the repository:git clone https://github.com/kritiizx/fastapi-kpa-api
+
 cd fastapi-kpa-api
+
 Navigate into the project directory:cd kpa_backend
+
 Create and activate a Python virtual environment:python -m venv venv
 
 Install dependencies:pip install -r requirements.txt
+
 (Note: This project was developed with Python 3.12.4. Specific versions of passlib==1.7.4 and bcrypt==3.2.0 were explicitly installed to resolve compatibility issues.)
 
 Install PostgreSQL:Download and install PostgreSQL from https://www.postgresql.org/download/. Remember the postgres superuser password you set during installation.Create a PostgreSQL database:Using pgAdmin (the graphical tool that comes with PostgreSQL) or psql (command-line client), create a new database named kpa_db.Configure Environment Variables (.env file):Create a file named .env in the root directory of your Git repository . 
