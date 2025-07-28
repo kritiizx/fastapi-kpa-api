@@ -4,7 +4,7 @@ KPA Backend Assignment
 This project implements two backend APIs for the KPA assignment using FastAPI and PostgreSQL, demonstrating user authentication and profile retrieval.
 Setup InstructionsTo get this project up and running on your local machine, follow these steps:
 
-Clone the repository:git clone https://github.com/kritiizx/fastapi-kpa-api
+Clone the repository:  git clone https://github.com/kritiizx/fastapi-kpa-api
 
 cd fastapi-kpa-api
 
